@@ -23,7 +23,7 @@ curl -fsSL https://raw.githubusercontent.com/alfredvc/matvaretabellen-cli/main/i
 
 Installs to `~/.local/bin/mvt`. Set `INSTALL_DIR` to override.
 
-Alternatively via `cargo install matvaretabellen-cli` once published.
+Or download a prebuilt binary from the [releases page](https://github.com/alfredvc/matvaretabellen-cli/releases).
 
 ## Usage
 

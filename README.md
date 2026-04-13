@@ -1,11 +1,15 @@
 # mvt
 
-![mvt](docs/readme-image.jpg)
+<p align="center">
+  <img src="docs/readme-image.jpg" alt="mvt" />
+</p>
 
-[![CI](https://img.shields.io/github/actions/workflow/status/alfredvc/matvaretabellen-cli/ci.yml?branch=main&label=CI)](https://github.com/alfredvc/matvaretabellen-cli/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/alfredvc/matvaretabellen-cli)](https://github.com/alfredvc/matvaretabellen-cli/releases)
-[![License](https://img.shields.io/github/license/alfredvc/matvaretabellen-cli)](LICENSE)
-![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS-lightgrey)
+<p align="center">
+  <a href="https://github.com/alfredvc/matvaretabellen-cli/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/alfredvc/matvaretabellen-cli/ci.yml?branch=main&label=CI" alt="CI" /></a>
+  <a href="https://github.com/alfredvc/matvaretabellen-cli/releases"><img src="https://img.shields.io/github/v/release/alfredvc/matvaretabellen-cli" alt="Release" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT" /></a>
+  <img src="https://img.shields.io/badge/platform-linux%20%7C%20macOS-lightgrey" alt="Platform" />
+</p>
 
 Agent-friendly Rust CLI for the Norwegian Food Composition Table ([matvaretabellen.no](https://www.matvaretabellen.no/api/)), run by Mattilsynet.
 
@@ -29,7 +33,7 @@ All commands emit JSON to stdout (pretty-printed in a TTY, compact when piped or
 
 | Flag | Default | Purpose |
 |---|---|---|
-| `--locale en|nb` | `en` (or `$MVT_LOCALE`) | Dataset locale |
+| `--locale en\|nb` | `en` (or `$MVT_LOCALE`) | Dataset locale |
 | `--fields a,b,c.d` | — | Dotted field filter |
 | `--json` | — | Force compact JSON |
 

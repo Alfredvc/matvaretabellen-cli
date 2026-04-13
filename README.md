@@ -1,6 +1,6 @@
 # mvt
 
-![mvt](docs/readme-image.png)
+![mvt](docs/readme-image.jpg)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/alfredvc/matvaretabellen-cli/ci.yml?branch=main&label=CI)](https://github.com/alfredvc/matvaretabellen-cli/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/alfredvc/matvaretabellen-cli)](https://github.com/alfredvc/matvaretabellen-cli/releases)

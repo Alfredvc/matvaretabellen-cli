@@ -25,6 +25,21 @@ Installs to `~/.local/bin/mvt`. Set `INSTALL_DIR` to override.
 
 Or download a prebuilt binary from the [releases page](https://github.com/alfredvc/matvaretabellen-cli/releases).
 
+## Agent Skills
+
+Install skills for AI coding agents (Claude Code, Cursor, Gemini CLI, etc.):
+
+```bash
+npx skills add alfredvc/matvaretabellen-cli
+```
+
+Installs workflow-oriented instruction files that teach agents how to use the CLI. Available skills:
+
+- **mvt-shared** — output contract, locale flag, fields filter, resource list, offline guarantee.
+- **mvt-food-lookup** — step-by-step workflow for looking up a food's nutrient content, browsing food groups, checking RDA coverage, mapping LanguaL codes.
+
+See [AGENTS.md](AGENTS.md) for the command reference optimized for agents.
+
 ## Usage
 
 All commands emit JSON to stdout (pretty-printed in a TTY, compact when piped or with `--json`). Errors go to stderr as `{"error": "..."}` with exit code 1.
@@ -70,21 +85,6 @@ mvt foods rda 06.178 --fields coverage.nutrientId,coverage.percent | jq '.covera
 # Schema + version
 mvt describe | jq .dataVersion
 ```
-
-### Agent Skills
-
-Install skills for AI coding agents (Claude Code, Cursor, Gemini CLI, etc.):
-
-```bash
-npx skills add alfredvc/matvaretabellen-cli
-```
-
-Installs workflow-oriented instruction files that teach agents how to use the CLI. Available skills:
-
-- **mvt-shared** — output contract, locale flag, fields filter, resource list, offline guarantee.
-- **mvt-food-lookup** — step-by-step workflow for looking up a food's nutrient content, browsing food groups, checking RDA coverage, mapping LanguaL codes.
-
-See [AGENTS.md](AGENTS.md) for the command reference optimized for agents.
 
 ## Development
 
